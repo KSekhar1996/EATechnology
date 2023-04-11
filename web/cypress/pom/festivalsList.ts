@@ -19,10 +19,10 @@ class FestivalsList {
              
            }
    
-           cy.get(this.ELEMENT_FESTIVALS_LIST).each(($ele) => {    
+          cy.get(this.ELEMENT_FESTIVALS_LIST).each(($ele) => {    
              const names = $ele.text()
              cy.log(':: Name of Festival is :: ' + names) 
-        })
+          })
     })
 }
 
