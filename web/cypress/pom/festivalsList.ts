@@ -15,6 +15,10 @@ class FestivalsList {
     ELEMENT_FESTIVALS_LIST  = 'app-festivals ol li ul li'
     ELEMENT_FESTIVALS       = 'app-festivals ol'
 
+    //VERIFYING URL
+    verifyingUrl(){
+      expect(Cypress.config('baseUrl')).to.equal('http://localhost:4200/festivals')
+    }
     //VERIFYING THE GET API STATUS
     verifyFestivalsApiResponse(){
         cy.request({
